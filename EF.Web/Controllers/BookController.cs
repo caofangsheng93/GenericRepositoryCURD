@@ -62,7 +62,7 @@ namespace EF.Web.Controllers
                editModel.ISBN = model.ISBN;
                editModel.Title = model.Title;
                editModel.PublishedDate = model.PublishedDate;
-               editModel.ModifiedDate = model.ModifiedDate;
+               editModel.ModifiedDate = DateTime.Now;
                editModel.IP = Request.UserHostAddress;
                bookRepository.Update(editModel);
 
