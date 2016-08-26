@@ -61,7 +61,7 @@ namespace EF.Data
        /// <returns></returns>
        public T GetById(int id)
        {
-           return this.entities.Find(id);
+           return this.Entities.Find(id);
        } 
        #endregion
 
